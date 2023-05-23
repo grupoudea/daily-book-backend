@@ -4,6 +4,7 @@ import co.com.udea.customer.domain.errorhandler.BadResponseHandler;
 import co.com.udea.customer.domain.model.Customer;
 import co.com.udea.customer.domain.model.enums.Responses;
 import co.com.udea.customer.domain.repository.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,6 +15,7 @@ public class CustomerService {
 
     private final CustomerRepository repository;
 
+    @Autowired
     public CustomerService(CustomerRepository repository) {
         this.repository = repository;
     }
