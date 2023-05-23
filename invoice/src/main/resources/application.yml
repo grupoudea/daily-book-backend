@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: micro-invoice
+  profiles:
+    active: dev
